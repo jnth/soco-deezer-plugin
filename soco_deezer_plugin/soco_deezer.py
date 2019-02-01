@@ -60,6 +60,8 @@ class DeezerSocoPlugin(SoCoPlugin):
         :param position: Position into the queue, None to the end of the queue.
         :type position: Optional[int]
         """
+        track_id = str(track_id)
+
         dz_track = self.__dz.get_track(track_id)
         album_id = dz_track.get_album().id
 
@@ -90,6 +92,8 @@ class DeezerSocoPlugin(SoCoPlugin):
         :param position: Position into the queue, None to the end of the queue.
         :type position: Optional[int]
         """
+        album_id = str(album_id)
+
         dz_album = self.__dz.get_album(album_id)
         artist_id = dz_album.get_artist().id
 
