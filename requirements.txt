@@ -1,0 +1,2 @@
+soco == 0.16
+deezer-python == 0.8.0
