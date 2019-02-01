@@ -42,6 +42,6 @@ We can use the Deezer API to search for an album and add it into Sonos queue::
 
 
 
-.. _SoCo: https://github.com/SoCo/SoCo
+.. _SoCo: http://python-soco.com/
 .. _Deezer: https://www.deezer.com
 .. _Sonos: https://www.sonos.com
