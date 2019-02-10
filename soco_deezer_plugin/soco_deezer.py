@@ -4,6 +4,7 @@
 """Deezer plugin for Sonos."""
 
 
+from typing import Union, Optional
 from soco.plugins import SoCoPlugin
 from soco.music_services import MusicService
 from soco.music_services.accounts import Account
@@ -52,14 +53,22 @@ class DeezerSocoPlugin(SoCoPlugin):
              ('DesiredFirstTrackNumberEnqueued', position),
              ('EnqueueAsNext', 1)])
 
-    def add_track_to_queue(self, track_id, position=None):
+    def add_track_to_queue(self,
+                           track: Union[deezer.resources.Track, str, int],
+                           position: Optional[int] = None):
         """Add a track into Sonos queue.
 
-        :param track_id: Deezer track identifier
-        :type track_id: str
+        :param track: Deezer Track object or Deezer track identifier
         :param position: Position into the queue, None to the end of the queue.
-        :type position: Optional[int]
         """
+        if isinstance(track, deezer.resources.Track):
+            track_id = str(track.id)
+        elif isinstance(track, (str, int)):
+            track_id = str(track)
+        else:
+            raise TypeError("Invalid `track` argument")
+        del track
+
         track_id = str(track_id)
 
         dz_track = self.__dz.get_track(track_id)
@@ -84,15 +93,21 @@ class DeezerSocoPlugin(SoCoPlugin):
                              restricted=False)
         self.__add_uri_to_queue(uri, didl, position)
 
-    def add_album_to_queue(self, album_id, position=None):
+    def add_album_to_queue(self,
+                           album: Union[deezer.resources.Album, str, int],
+                           position: Optional[int] = None):
         """Add an album into Sonos queue.
 
-        :param album_id: Deezer album identifier
-        :type album_id: str
+        :param album: Deezer Album object or Deezer album identifier
         :param position: Position into the queue, None to the end of the queue.
-        :type position: Optional[int]
         """
-        album_id = str(album_id)
+        if isinstance(album, deezer.resources.Album):
+            album_id = str(album.id)
+        elif isinstance(album, (str, int)):
+            album_id = str(album)
+        else:
+            raise TypeError("Invalid `album` argument")
+        del album
 
         dz_album = self.__dz.get_album(album_id)
         artist_id = dz_album.get_artist().id

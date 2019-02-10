@@ -30,18 +30,18 @@ Example of use::
     dzs.add_track_to_queue('107028548')  # add track at the end of queue
     dzs.add_album_to_queue('85607212', position=1)  # add album at the begining of queue
 
-We can use the Deezer API to search for an album and add it into Sonos queue::
+We can use the `deezer-python library`_ to search for an album and add it into Sonos queue::
 
     import deezer
 
     client = deezer.Client()
-    client.search(query="Beirut", relation="artist")[0]
     artist = client.search(query="Beirut", relation="artist")[0]
     album = artist.get_albums()[0]
-    dzs.add_album_to_queue(album.id)
+    dzs.add_album_to_queue(album)
 
 
 
 .. _SoCo: http://python-soco.com/
 .. _Deezer: https://www.deezer.com
 .. _Sonos: https://www.sonos.com
+.. _deezer-python library: https://github.com/browniebroke/deezer-python
