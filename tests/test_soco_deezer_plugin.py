@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-"""Docstring."""
+"""Test of this plugin."""
 
 import os
 import unittest
