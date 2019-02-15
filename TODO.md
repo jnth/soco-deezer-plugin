@@ -1,6 +1,6 @@
 # TODO
 
- - [ ] Add tests
+ - [x] Add tests
  - [ ] Use Sphinx to build documentation
  - [ ] Use tox to build/test documentation
  - [ ] Use tox to run tests in py36 and py37 environnemnt

@@ -1,0 +1,273 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.21.0]
+    method: GET
+    uri: https://api.deezer.com/track/107028548
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+2XXU/bSBSG/8rKF3tFEtvEqY2EKmISExK7KXbSLZtV5I+Bztb5kO0AbcV/33kc
+        BLTbzYYL7grkSJk553nfMzm2wzdNZtqRob/RTdtq2wdaIeIsTnKhHVXFRhxolax4o3kyKeK8igvt
+        YW1efloV1U93bkRRytVS7aklWRYpWd2T/siwdF03HbWay+Vntfqpqtbl0aw1a93e3jYzIb6Kopmu
+        FrNWVcTp51nr0ZmqKT/FhXhR0dtNtZiXq02RiuNt3u+spKtlJZbVcZ3eeMyu9ypRLI71uWG1HfvQ
+        NHSrXl2ITG4Wx7ciUT6yTRFXdX+maaieoczXq1JuF9VSJsvP8+VmkYiifl/EdGuZjq5bHHEu4lLM
+        s7iiHVM3rIbuNAxDscXdOpeprOb5l0KmpXZ0FeeleLb+4P1xX//JXrq6Qdg80NaFuJHi9rtDS7Nl
+        2XjYaNjN7KtaaC5FNWuVlfr01TGmDTuLzatYdNpGx07Ttm44iZMKcfjmMDMc59BqGM3F+lD5TdYL
+        xsc50K5jqZpXp9lULcY3scwZI+Vls6wKKZTVP7WTnio56RM8woAwIviEd4T3hAtCSIgIE8KlCt0T
+        QpdwSoDXhdeF1z0jAO2eEwIC0C68LqjulPCB8FEFF57rEuC5oFxQLigXlDskYNLFpAvUBeoCdbHm
+        AnX/INRQnJ5i7RQbpwBOqT1lo4daj90eQj2EeqB69NvDZB/dPrV9avvU9knxsOvRvoddD4oHwCPF
+        w5rH+Xl1MjwPnodJj6bP4J2RfEbyGXln7A7gDeANaHXA7oAuB/AG5A3gDeCdAzhn93yswpCyIc0M
+        8TLE/ZCUIZRhnQJgiIMhJzTkIEY0M6KZEUcywtqIvBFCI4RGWBtxuiPKfCp8nPpI+kj6SPrU+hj3
+        0fXR9dH14fnwfHg+PB+ejxefj8yvyRgKwAeQA+YgAB/QTAA5oN8AaAA0ABVQ9g7JMbVjaseUjXE1
+        xtWY2jGGxtgYY2OM+Bjd95RdQL5g9wLoBbshGyGHE3I4IU2H4EPwIa5CBiREI0QjRCMEFaIR0mWI
+        RojJCEoEJQIQ4S8CEAGIAET0EUGJoER0GUGJMBRBmeBqAmBC8gTPEzQm7E7RmGJySsoUk1N4U9r6
+        QPJHdi+hXAK4/KD9daBx2ypksqlWBXeJb/Uj6dDhVrmMF9wiu0IWm0rb47ERF5Us1a2Mcm2fR8bz
+        gv95XGxTG2Tu+6hYy7Ta/OAgXsv/dDBryUV8LZ4q5+UizvN/37/rtPL5zXu78oTLOnZstjup7WSp
+        1davHKOtx+3EFG9SYdmWPWtZnTur09Drn4atN9Rv8+/19TPxbS+vo25a+p167dRP5PUrta7rd+q1
+        U/zulY7dUIp3hJ+qF3EmV49fvvhqkSvuCwaoWq3f5nIhq2NLV7zqy5rx2+bAX9Vf53ye1vfq4nvY
+        OPp11f266n5dda9z1d2ryyxP+Ei3V5lhGJbj2ObTf1fB6rf6b6+LDZRq6AGi8QCtv+/vMvt9zdPA
+        16UvH/e6bNbqCNE2HPsqEYl11bmyHEtXdCHsWLfalpnsmvat8stnfW/pXaO+FX/hoO/f9I453yq/
+        bMr3Fv6fId/xf+eeM//jGNVl5bOBr8f8/vF9va/d/wMV32o8ZhAAAA==
+    headers:
+      Content-Encoding: [gzip]
+      Content-Length: ['1237']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 10 Feb 2019 20:55:05 GMT']
+      P3P: [policyref="/w3c/p3p.xml" CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM
+          STA"]
+      Server: [Apache]
+      Set-Cookie: ['dzr_uniq_id=dzr_uniq_id_fr7be0d08303aeaada31410d136511e0ecaf3b60;
+          expires=Fri, 09-Aug-2019 20:55:05 GMT; Max-Age=15552000; path=/; domain=.deezer.com']
+      Vary: [Accept-Encoding]
+      X-Host: [blm-web-12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [dzr_uniq_id=dzr_uniq_id_fr7be0d08303aeaada31410d136511e0ecaf3b60]
+      User-Agent: [python-requests/2.21.0]
+    method: GET
+    uri: https://api.deezer.com/album/11159982
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1ZS0/jSBD+K8iHPSWk3+5GQiNWq9ndw86OtMfNKOpHGbw4dmS3gRnEf9+2yctJ
+        8CSTgclhgACp6q6q9lf1VTU8RqmLLjDGXClJBpFPfQbRRfShOGu/okFUz2wQCE4EjSknnPIgzNL8
+        NkhvvJ9VF+PReHR/f3/uAL5AeW6L6XikM1OHHwvLYUt1o0s4ZM+72k8nVVGXFi6fl/3SSGyRe8j9
+        Zbt6uFjcqjyU00s0wZwpSQlGvJVOwaX19PIeTIjCFndQdqLQs7QvivEoneprWGydVFOdZR0DMLQu
+        r4btsurcfQnvznPw843VeNRuHI8EAMNKJgYMT0TCFUfBPoDUiDNOzHjExQMXQ9R+DCUahs/z/2bX
+        S9/PJ3kl54Sjh/DqcW/S69c6OEIP4dXj++G1njkODh+abzudX0NewqSpEcnn76ro4jFy2uvo4t/H
+        aKHK9bRJ7qss5GCufXrXZMwstb7eSPrNdGttjkeSrxLNf541e1pN9DSYOxFLJx+L2dmfuRvXCIE6
+        0I34ihtMybqfw6yHzV81TzvHSBfHGI/eF9ntoe7oS+4+PQWO0gaarGFXvwV9bia+1PY2wKcGkavL
+        AFKRh4hiHg+iROdBQTCJ5SBqVHlIdRR+hQx0BZOAd2OdIMyHSAXWiRqdLUo3mTtuaSNI9Z1Og+eG
+        RX1ZQwis8ZqllT+MdebBDiJ4mGWpTf0k+1ymNkSZ6KyCNfmcEJd6tEM3pz3SlFPuy9TUviirZQZT
+        hVY5/CukZe33IvnSh3ONR832/Rh+bcPX6L1dOmxW7svt+6TOegSr5Jnv/BZyXxh0QmrChJXKWc5Q
+        ojBDmhkCsQUuuexj94X7b+H3/f33EfwigoMp/oDj93D8wv2hLL+/936aL7VLiwMLtpNIvpi9y9Jp
+        6i85WpHR85rGftFOVX/pNA/cNFgoLvqq72c2/8zmb8vm757ATyvBvMstWunGJIRRjIjkrGmioF2n
+        Dc5vFr+nptSZ12U0l02qm6L0OzWhZ1Vtk4726UZtTM2zmccQrbd5QnBT5o0JThRqCu47N9ZZCXcp
+        3HdCbAGfK4ZyHfPKhwcUgrZD6TRJNAiGhbSWIayMsgDhsuWwUpQP8fl0RqP9SOMVoW9Nrwa556fM
+        0ctIr90hu0BvKY7BuY15fZxDC5xjJBlDb4+z2Y2zIQZh4QwL425gDquAY66FiRmijlFx2jiTl3G+
+        8md/5xa2YN6UH4Uy6aJMxAJlFgtB4rdHGe1GGSVIGGmJ0IC5NUiHJHQCUCJoYqSjQ3LKKLMelOvr
+        uvJnfxRZpnO3DfZu9VGYsy6D42VlMy44xW+PebIb80RjDlTHjDMChlLFqCLGgbaCW4HJaVe26MG8
+        OvsA4GAH3Fuao5AW3epWcok0UVSqt0da7UZaMcbASqEZd7E1isUWm9gkhBEWprP4tKu7Zyr7CKW/
+        2UK5Kz0K4Y1pDMcr/qYK/4BaJrsRJoqB0MRwxRLNSKxpnDgaC6QVEGHNSdey6JnGPmp7A3Z7GNuU
+        H4Oy2JjF5KqOcawIOZ0uLZq//xoSKBtiIrXFWnJKgRutiOP6tFHumcXeQw7bN6uu9CiEu3MYQSuE
+        EVP4BzD1S9N2EroyBYKMlgK5MExoLeOAscWW8ESeNsI9c9g/xdlVlhX3O5ryDtVRWG/OX2qJNY15
+        8/+It8aa7caaJVI4ShJwyBGIw93fYYkVRXE4CeOnhvWnp6f/AQ0E8VR3HQAA
+    headers:
+      Content-Encoding: [gzip]
+      Content-Length: ['1299']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 10 Feb 2019 20:55:05 GMT']
+      P3P: [policyref="/w3c/p3p.xml" CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM
+          STA"]
+      Server: [Apache]
+      Set-Cookie: ['dzr_uniq_id=dzr_uniq_id_fr7be0d08303aeaada31410d136511e0ecaf3b60;
+          expires=Fri, 09-Aug-2019 20:55:05 GMT; Max-Age=15552000; path=/; domain=.deezer.com']
+      Vary: [Accept-Encoding]
+      X-Host: [blm-web-113]
+    status: {code: 200, message: OK}
+- request:
+    body: <?xml version="1.0"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+      s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:Browse
+      xmlns:u="urn:schemas-upnp-org:service:ContentDirectory:1"><ObjectID>Q:0</ObjectID><BrowseFlag>BrowseDirectChildren</BrowseFlag><Filter>*</Filter><StartingIndex>0</StartingIndex><RequestedCount>100</RequestedCount><SortCriteria></SortCriteria></u:Browse></s:Body></s:Envelope>
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['438']
+      Content-Type: [text/xml; charset="utf-8"]
+      SOAPACTION: ['urn:schemas-upnp-org:service:ContentDirectory:1#Browse']
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: http://192.168.1.18:1400/MediaServer/ContentDirectory/Control
+  response:
+    body: {string: '<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+        s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:BrowseResponse
+        xmlns:u="urn:schemas-upnp-org:service:ContentDirectory:1"><Result>&lt;DIDL-Lite
+        xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot; xmlns:upnp=&quot;urn:schemas-upnp-org:metadata-1-0/upnp/&quot;
+        xmlns:r=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot; xmlns=&quot;urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/&quot;&gt;&lt;/DIDL-Lite&gt;</Result><NumberReturned>0</NumberReturned><TotalMatches>0</TotalMatches><UpdateID>110</UpdateID></u:BrowseResponse></s:Body></s:Envelope>'}
+    headers:
+      CONTENT-TYPE: [text/xml; charset="utf-8"]
+      Connection: [close]
+      EXT: ['']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+      TRANSFER-ENCODING: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: <?xml version="1.0"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+      s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:AddURIToQueue
+      xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><InstanceID>0</InstanceID><EnqueuedURI>x-sonos-http:tr%3A107028548?sid=2&amp;amp;sn=0</EnqueuedURI><EnqueuedURIMetaData>&lt;DIDL-Lite
+      xmlns=&quot;urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/&quot; xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
+      xmlns:r=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot; xmlns:upnp=&quot;urn:schemas-upnp-org:metadata-1-0/upnp/&quot;&gt;&lt;item
+      id=&quot;00032020tr%3A107028548&quot; parentID=&quot;0004206calbum-11159982&quot;
+      restricted=&quot;false&quot;&gt;&lt;dc:title&gt;Gibraltar&lt;/dc:title&gt;&lt;res
+      protocolInfo=&quot;sonos.com-http:*:audio/mp4:*&quot;&gt;x-sonos-http:tr%3A107028548?sid=2&amp;amp;amp;sn=0&lt;/res&gt;&lt;upnp:class&gt;object.item.audioItem&lt;/upnp:class&gt;&lt;desc
+      id=&quot;cdudn&quot; nameSpace=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot;&gt;SA_RINCON519_user@home.com&lt;/desc&gt;&lt;/item&gt;&lt;/DIDL-Lite&gt;</EnqueuedURIMetaData><DesiredFirstTrackNumberEnqueued>1</DesiredFirstTrackNumberEnqueued><EnqueueAsNext>1</EnqueueAsNext></u:AddURIToQueue></s:Body></s:Envelope>
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1287']
+      Content-Type: [text/xml; charset="utf-8"]
+      SOAPACTION: ['urn:schemas-upnp-org:service:AVTransport:1#AddURIToQueue']
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: http://192.168.1.18:1400/MediaRenderer/AVTransport/Control
+  response:
+    body: {string: '<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+        s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:AddURIToQueueResponse
+        xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><FirstTrackNumberEnqueued>1</FirstTrackNumberEnqueued><NumTracksAdded>1</NumTracksAdded><NewQueueLength>1</NewQueueLength></u:AddURIToQueueResponse></s:Body></s:Envelope>'}
+    headers:
+      CONTENT-LENGTH: ['380']
+      CONTENT-TYPE: [text/xml; charset="utf-8"]
+      Connection: [close]
+      EXT: ['']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [dzr_uniq_id=dzr_uniq_id_fr7be0d08303aeaada31410d136511e0ecaf3b60]
+      User-Agent: [python-requests/2.21.0]
+    method: GET
+    uri: https://api.deezer.com/album/85607212
+  response:
+    body:
+      string: !!binary |
+        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
+        H+7u/gVTEWMcvyIAAA==
+    headers:
+      Content-Encoding: [gzip]
+      Content-Length: ['1438']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 10 Feb 2019 20:55:05 GMT']
+      P3P: [policyref="/w3c/p3p.xml" CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM
+          STA"]
+      Server: [Apache]
+      Set-Cookie: ['dzr_uniq_id=dzr_uniq_id_fr7be0d08303aeaada31410d136511e0ecaf3b60;
+          expires=Fri, 09-Aug-2019 20:55:05 GMT; Max-Age=15552000; path=/; domain=.deezer.com']
+      Vary: [Accept-Encoding]
+      X-Host: [blm-web-29]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [dzr_uniq_id=dzr_uniq_id_fr7be0d08303aeaada31410d136511e0ecaf3b60]
+      User-Agent: [python-requests/2.21.0]
+    method: GET
+    uri: https://api.deezer.com/artist/1701297
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7VTTWvDMAz9K8OHnZrEbps0DoRedtxPCAQnVluv/gi2Q7KO/fc5SaHbGIUdaiOD
+        5Pf0JCN/IMFRQXaYrOluhTRTgAr0avqnFyOkNBqtkBT6HIIn7ztXVEmVDMMQc4AL2Lg1qkqY9cL5
+        KrmmCRR3Yhb+w9n3XtXO9LaFcoE9T5HWaA/alws6uoLnKw9Wlbgm6ZbmmzXB6RxVwEWvygGaUEUn
+        Wt//qoN14l4dVSIUO8KNXDvFpPyRAqKWaxfNQBfzS/BiDf5KdbecTbPNCHBKmw2HvM03NKU4ozwn
+        7JACCWJpNqZZhOcV5TgKO37rjt/kl4Yepb9O8RjsbgWNOD6sfYzHYHflx4c9Pgma43T8qa+bmslm
+        evrd7ByYRsWW4umbWMaFQYW3PayQt6w9y6D5vznzpttLoYQvUxzk/Hs3DeoCQ59f09jI4ZgDAAA=
+    headers:
+      Content-Encoding: [gzip]
+      Content-Length: ['341']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 10 Feb 2019 20:55:05 GMT']
+      P3P: [policyref="/w3c/p3p.xml" CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM
+          STA"]
+      Server: [Apache]
+      Set-Cookie: ['dzr_uniq_id=dzr_uniq_id_fr7be0d08303aeaada31410d136511e0ecaf3b60;
+          expires=Fri, 09-Aug-2019 20:55:05 GMT; Max-Age=15552000; path=/; domain=.deezer.com',
+        'ADRUM_BT=R%3A0%7Cg%3A5aa14e5d-1d77-40f1-841b-687ee6bf97691841%7Cn%3Adeezer_4d9fde9f-5114-49cf-ae7c-978ae57772c1%7Ci%3A342929%7Cd%3A12%7Ch%3Ae%7Ce%3A13;
+          expires=Sun, 10-Feb-2019 20:55:35 GMT; Max-Age=30; path=/']
+      Vary: [Accept-Encoding]
+      X-Host: [blm-web-50]
+    status: {code: 200, message: OK}
+- request:
+    body: <?xml version="1.0"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+      s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:AddURIToQueue
+      xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><InstanceID>0</InstanceID><EnqueuedURI>x-rincon-cpcontainer:0004206calbum-85607212</EnqueuedURI><EnqueuedURIMetaData>&lt;DIDL-Lite
+      xmlns=&quot;urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/&quot; xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
+      xmlns:r=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot; xmlns:upnp=&quot;urn:schemas-upnp-org:metadata-1-0/upnp/&quot;&gt;&lt;container
+      id=&quot;0004206calbum-85607212&quot; parentID=&quot;1008006cuser-albums-1701297&quot;
+      restricted=&quot;false&quot;&gt;&lt;dc:title&gt;Soliloquy&lt;/dc:title&gt;&lt;res
+      protocolInfo=&quot;x-rincon-cpcontainer:*:*:*&quot;&gt;x-rincon-cpcontainer:0004206calbum-85607212&lt;/res&gt;&lt;upnp:class&gt;object.container.album&lt;/upnp:class&gt;&lt;desc
+      id=&quot;cdudn&quot; nameSpace=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot;&gt;SA_RINCON519_user@home.com&lt;/desc&gt;&lt;/container&gt;&lt;/DIDL-Lite&gt;</EnqueuedURIMetaData><DesiredFirstTrackNumberEnqueued>1</DesiredFirstTrackNumberEnqueued><EnqueueAsNext>1</EnqueueAsNext></u:AddURIToQueue></s:Body></s:Envelope>
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1291']
+      Content-Type: [text/xml; charset="utf-8"]
+      SOAPACTION: ['urn:schemas-upnp-org:service:AVTransport:1#AddURIToQueue']
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: http://192.168.1.18:1400/MediaRenderer/AVTransport/Control
+  response:
+    body: {string: '<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+        s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:AddURIToQueueResponse
+        xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><FirstTrackNumberEnqueued>1</FirstTrackNumberEnqueued><NumTracksAdded>12</NumTracksAdded><NewQueueLength>13</NewQueueLength></u:AddURIToQueueResponse></s:Body></s:Envelope>'}
+    headers:
+      CONTENT-LENGTH: ['382']
+      CONTENT-TYPE: [text/xml; charset="utf-8"]
+      Connection: [close]
+      EXT: ['']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+    status: {code: 200, message: OK}
+version: 1

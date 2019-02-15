@@ -1,0 +1,624 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.21.0]
+    method: GET
+    uri: http://192.168.1.18:1400/xml/ZoneGroupTopology1.xml
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<scpd xmlns=\"urn:schemas-upnp-org:service-1-0\">\n
+        \ <specVersion>\n    <major>1</major>\n    <minor>0</minor>\n  </specVersion>\n
+        \ <serviceStateTable>\n    <stateVariable sendEvents=\"yes\">\n      <name>AvailableSoftwareUpdate</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"yes\">\n      <name>ZoneGroupState</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"yes\">\n      <name>ThirdPartyMediaServersX</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"yes\">\n      <name>AlarmRunSequence</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"yes\">\n      <name>MuseHouseholdId</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"yes\">\n      <name>ZoneGroupName</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"yes\">\n      <name>ZoneGroupID</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"yes\">\n      <name>ZonePlayerUUIDsInGroup</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_UpdateType</name>\n
+        \     <dataType>string</dataType>\n      <allowedValueList>\n        <allowedValue>All</allowedValue>\n
+        \       <allowedValue>Software</allowedValue>\n      </allowedValueList>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_CachedOnly</name>\n
+        \     <dataType>boolean</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"no\">\n      <name>A_ARG_TYPE_UpdateItem</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_UpdateURL</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"no\">\n      <name>A_ARG_TYPE_UpdateFlags</name>\n      <dataType>ui4</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_UpdateExtraOptions</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"no\">\n      <name>A_ARG_TYPE_Version</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_MemberID</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"no\">\n      <name>A_ARG_TYPE_UnresponsiveDeviceActionType</name>\n
+        \     <dataType>string</dataType>\n      <allowedValueList>\n        <allowedValue>Remove</allowedValue>\n
+        \       <allowedValue>TopologyMonitorProbe</allowedValue>\n        <allowedValue>VerifyThenRemoveSystemwide</allowedValue>\n
+        \     </allowedValueList>\n    </stateVariable>\n    <stateVariable sendEvents=\"no\">\n
+        \     <name>DiagnosticID</name>\n      <dataType>ui4</dataType>\n    </stateVariable>\n
+        \   <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_IncludeControllers</name>\n
+        \     <dataType>boolean</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"no\">\n      <name>A_ARG_TYPE_Origin</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_MobileDeviceName</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"no\">\n      <name>A_ARG_TYPE_MobileDeviceUDN</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_MobileIPAndPort</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n  </serviceStateTable>\n
+        \ <actionList>\n    <action>\n      <name>CheckForUpdate</name>\n      <argumentList>\n
+        \       <argument>\n          <name>UpdateType</name>\n          <direction>in</direction>\n
+        \         <relatedStateVariable>A_ARG_TYPE_UpdateType</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>CachedOnly</name>\n
+        \         <direction>in</direction>\n          <relatedStateVariable>A_ARG_TYPE_CachedOnly</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>Version</name>\n
+        \         <direction>in</direction>\n          <relatedStateVariable>A_ARG_TYPE_Version</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>UpdateItem</name>\n
+        \         <direction>out</direction>\n          <relatedStateVariable>A_ARG_TYPE_UpdateItem</relatedStateVariable>\n
+        \       </argument>\n      </argumentList>\n    </action>\n    <action>\n
+        \     <name>BeginSoftwareUpdate</name>\n      <argumentList>\n        <argument>\n
+        \         <name>UpdateURL</name>\n          <direction>in</direction>\n          <relatedStateVariable>A_ARG_TYPE_UpdateURL</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>Flags</name>\n          <direction>in</direction>\n
+        \         <relatedStateVariable>A_ARG_TYPE_UpdateFlags</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>ExtraOptions</name>\n
+        \         <direction>in</direction>\n          <relatedStateVariable>A_ARG_TYPE_UpdateExtraOptions</relatedStateVariable>\n
+        \       </argument>\n      </argumentList>\n    </action>\n    <action>\n
+        \     <name>ReportUnresponsiveDevice</name>\n      <argumentList>\n        <argument>\n
+        \         <name>DeviceUUID</name>\n          <direction>in</direction>\n          <relatedStateVariable>A_ARG_TYPE_MemberID</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>DesiredAction</name>\n
+        \         <direction>in</direction>\n          <relatedStateVariable>A_ARG_TYPE_UnresponsiveDeviceActionType</relatedStateVariable>\n
+        \       </argument>\n      </argumentList>\n    </action>\n    <action>\n
+        \     <name>ReportAlarmStartedRunning</name>\n    </action>\n    <action>\n
+        \     <name>SubmitDiagnostics</name>\n      <argumentList>\n        <argument>\n
+        \         <name>DiagnosticID</name>\n          <direction>out</direction>\n
+        \         <relatedStateVariable>DiagnosticID</relatedStateVariable>\n        </argument>\n
+        \       <argument>\n          <name>IncludeControllers</name>\n          <direction>in</direction>\n
+        \         <relatedStateVariable>A_ARG_TYPE_IncludeControllers</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>Type</name>\n          <direction>in</direction>\n
+        \         <relatedStateVariable>A_ARG_TYPE_Origin</relatedStateVariable>\n
+        \       </argument>\n      </argumentList>\n    </action>\n    <action>\n
+        \     <name>RegisterMobileDevice</name>\n      <argumentList>\n        <argument>\n
+        \         <name>MobileDeviceName</name>\n          <direction>in</direction>\n
+        \         <relatedStateVariable>A_ARG_TYPE_MobileDeviceName</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>MobileDeviceUDN</name>\n
+        \         <direction>in</direction>\n          <relatedStateVariable>A_ARG_TYPE_MobileDeviceUDN</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>MobileIPAndPort</name>\n
+        \         <direction>in</direction>\n          <relatedStateVariable>A_ARG_TYPE_MobileIPAndPort</relatedStateVariable>\n
+        \       </argument>\n      </argumentList>\n    </action>\n    <action>\n
+        \     <name>GetZoneGroupAttributes</name>\n      <argumentList>\n        <argument>\n
+        \         <name>CurrentZoneGroupName</name>\n          <direction>out</direction>\n
+        \         <relatedStateVariable>ZoneGroupName</relatedStateVariable>\n        </argument>\n
+        \       <argument>\n          <name>CurrentZoneGroupID</name>\n          <direction>out</direction>\n
+        \         <relatedStateVariable>ZoneGroupID</relatedStateVariable>\n        </argument>\n
+        \       <argument>\n          <name>CurrentZonePlayerUUIDsInGroup</name>\n
+        \         <direction>out</direction>\n          <relatedStateVariable>ZonePlayerUUIDsInGroup</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>CurrentMuseHouseholdId</name>\n
+        \         <direction>out</direction>\n          <relatedStateVariable>MuseHouseholdId</relatedStateVariable>\n
+        \       </argument>\n      </argumentList>\n    </action>\n    <action>\n
+        \     <name>GetZoneGroupState</name>\n      <argumentList>\n        <argument>\n
+        \         <name>ZoneGroupState</name>\n          <direction>out</direction>\n
+        \         <relatedStateVariable>ZoneGroupState</relatedStateVariable>\n        </argument>\n
+        \     </argumentList>\n    </action>\n  </actionList>\n</scpd>\n"}
+    headers:
+      Cache-Control: [no-cache]
+      Connection: [close]
+      Content-length: ['8276']
+      Content-type: [text/xml]
+      Last-Modified: ['Wed, 23 Jan 2019 05:30:25 GMT']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+    status: {code: 200, message: OK}
+- request:
+    body: <?xml version="1.0"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+      s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetZoneGroupState
+      xmlns:u="urn:schemas-upnp-org:service:ZoneGroupTopology:1"></u:GetZoneGroupState></s:Body></s:Envelope>
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['277']
+      Content-Type: [text/xml; charset="utf-8"]
+      SOAPACTION: ['urn:schemas-upnp-org:service:ZoneGroupTopology:1#GetZoneGroupState']
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: http://192.168.1.18:1400/ZoneGroupTopology/Control
+  response:
+    body: {string: '<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+        s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetZoneGroupStateResponse
+        xmlns:u="urn:schemas-upnp-org:service:ZoneGroupTopology:1"><ZoneGroupState>&lt;ZoneGroups&gt;&lt;ZoneGroup
+        Coordinator=&quot;RINCON_347E5C68F04001400&quot; ID=&quot;RINCON_347E5C68F04001400:1822799472&quot;&gt;&lt;ZoneGroupMember
+        UUID=&quot;RINCON_347E5C68F04001400&quot; Location=&quot;http://192.168.1.18:1400/xml/device_description.xml&quot;
+        ZoneName=&quot;Salon&quot; Icon=&quot;x-rincon-roomicon:living&quot; Configuration=&quot;1&quot;
+        SoftwareVersion=&quot;48.2-61220&quot; MinCompatibleVersion=&quot;47.0-00000&quot;
+        LegacyCompatibleVersion=&quot;36.0-00000&quot; BootSeq=&quot;4&quot; TVConfigurationError=&quot;0&quot;
+        HdmiCecAvailable=&quot;0&quot; WirelessMode=&quot;0&quot; WirelessLeafOnly=&quot;0&quot;
+        HasConfiguredSSID=&quot;0&quot; ChannelFreq=&quot;2437&quot; BehindWifiExtender=&quot;0&quot;
+        WifiEnabled=&quot;1&quot; Orientation=&quot;0&quot; RoomCalibrationState=&quot;4&quot;
+        SecureRegState=&quot;3&quot; VoiceState=&quot;1&quot; AirPlayEnabled=&quot;1&quot;
+        IdleState=&quot;1&quot; MoreInfo=&quot;&quot;/&gt;&lt;/ZoneGroup&gt;&lt;/ZoneGroups&gt;</ZoneGroupState></u:GetZoneGroupStateResponse></s:Body></s:Envelope>'}
+    headers:
+      CONTENT-LENGTH: ['1299']
+      CONTENT-TYPE: [text/xml; charset="utf-8"]
+      Connection: [close]
+      EXT: ['']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+    status: {code: 200, message: OK}
+- request:
+    body: <?xml version="1.0"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+      s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:RemoveAllTracksFromQueue
+      xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><InstanceID>0</InstanceID></u:RemoveAllTracksFromQueue></s:Body></s:Envelope>
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['311']
+      Content-Type: [text/xml; charset="utf-8"]
+      SOAPACTION: ['urn:schemas-upnp-org:service:AVTransport:1#RemoveAllTracksFromQueue']
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: http://192.168.1.18:1400/MediaRenderer/AVTransport/Control
+  response:
+    body: {string: '<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+        s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:RemoveAllTracksFromQueueResponse
+        xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"></u:RemoveAllTracksFromQueueResponse></s:Body></s:Envelope>'}
+    headers:
+      CONTENT-LENGTH: ['280']
+      CONTENT-TYPE: [text/xml; charset="utf-8"]
+      Connection: [close]
+      EXT: ['']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.21.0]
+    method: GET
+    uri: http://192.168.1.18:1400/xml/MusicServices1.xml
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<scpd xmlns=\"urn:schemas-upnp-org:service-1-0\">\n
+        \ <specVersion>\n    <major>1</major>\n    <minor>0</minor>\n  </specVersion>\n
+        \ <serviceStateTable>\n    <stateVariable sendEvents=\"no\">\n      <name>A_ARG_TYPE_ServiceDescriptorList</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"no\">\n      <name>A_ARG_TYPE_ServiceTypeList</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>ServiceId</name>\n
+        \     <dataType>ui4</dataType>\n    </stateVariable>\n    <stateVariable sendEvents=\"yes\">\n
+        \     <name>ServiceListVersion</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n    <stateVariable sendEvents=\"no\">\n      <name>SessionId</name>\n
+        \     <dataType>string</dataType>\n    </stateVariable>\n    <stateVariable
+        sendEvents=\"no\">\n      <name>Username</name>\n      <dataType>string</dataType>\n
+        \   </stateVariable>\n  </serviceStateTable>\n  <actionList>\n      <action>\n
+        \       <name>GetSessionId</name>\n        <argumentList>\n          <argument>\n
+        \           <name>ServiceId</name>\n            <direction>in</direction>\n
+        \           <relatedStateVariable>ServiceId</relatedStateVariable>\n          </argument>\n
+        \         <argument>\n            <name>Username</name>\n            <direction>in</direction>\n
+        \           <relatedStateVariable>Username</relatedStateVariable>\n          </argument>\n
+        \         <argument>\n            <name>SessionId</name>\n            <direction>out</direction>\n
+        \           <relatedStateVariable>SessionId</relatedStateVariable>\n          </argument>\n
+        \       </argumentList>\n      </action>\n    <action>\n      <name>ListAvailableServices</name>\n
+        \     <argumentList>\n        <argument>\n          <name>AvailableServiceDescriptorList</name>\n
+        \         <direction>out</direction>\n          <relatedStateVariable>A_ARG_TYPE_ServiceDescriptorList</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>AvailableServiceTypeList</name>\n
+        \         <direction>out</direction>\n          <relatedStateVariable>A_ARG_TYPE_ServiceTypeList</relatedStateVariable>\n
+        \       </argument>\n        <argument>\n          <name>AvailableServiceListVersion</name>\n
+        \         <direction>out</direction>\n          <relatedStateVariable>ServiceListVersion</relatedStateVariable>\n
+        \       </argument>\n      </argumentList>\n    </action>\n    <action>\n
+        \     <name>UpdateAvailableServices</name>\n    </action>\n  </actionList>\n</scpd>\n"}
+    headers:
+      Cache-Control: [no-cache]
+      Connection: [close]
+      Content-length: ['2479']
+      Content-type: [text/xml]
+      Last-Modified: ['Wed, 23 Jan 2019 05:30:25 GMT']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+    status: {code: 200, message: OK}
+- request:
+    body: <?xml version="1.0"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+      s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:ListAvailableServices
+      xmlns:u="urn:schemas-upnp-org:service:MusicServices:1"></u:ListAvailableServices></s:Body></s:Envelope>
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['281']
+      Content-Type: [text/xml; charset="utf-8"]
+      SOAPACTION: ['urn:schemas-upnp-org:service:MusicServices:1#ListAvailableServices']
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: http://192.168.1.18:1400/MusicServices/Control
+  response:
+    body: {string: "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"
+        s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><s:Body><u:ListAvailableServicesResponse
+        xmlns:u=\"urn:schemas-upnp-org:service:MusicServices:1\"><AvailableServiceDescriptorList>&lt;Services
+        SchemaVersion=&quot;1&quot;&gt;&lt;Service Id=&quot;212&quot; Name=&quot;Plex&quot;
+        Version=&quot;1.1&quot; Uri=&quot;https://sonos.plex.tv/v2/soap&quot; SecureUri=&quot;https://sonos.plex.tv/v2/soap&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;1315393&quot;&gt;&lt;Policy
+        Auth=&quot;AppLink&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;4&quot; Uri=&quot;https://sonos.plex.tv/v2/plexstrings.20180116.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;4&quot; Uri=&quot;https://sonos.plex.tv/v2/plex.20180108.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;284&quot; Name=&quot;YouTube Music&quot; Version=&quot;1.1&quot;
+        Uri=&quot;https://music.googleapis.com/v1:sendRequest&quot; SecureUri=&quot;https://music.googleapis.com/v1:sendRequest&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;32342537&quot;&gt;&lt;Policy
+        Auth=&quot;AppLink&quot; PollInterval=&quot;900&quot;/&gt;&lt;Manifest Version=&quot;8&quot;
+        Uri=&quot;https://mnfts.ws.sonos.com/p/ytm.json&quot;/&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;285&quot; Name=&quot;Soundry&quot; Version=&quot;1.1&quot; Uri=&quot;http://backend.soundry.com/sonos&quot;
+        SecureUri=&quot;https://backend.soundry.com/sonos&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;66048&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;3600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://audio.soundry.com/sonos/strings.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;144&quot; Name=&quot;Calm Radio&quot; Version=&quot;1.1&quot; Uri=&quot;https://api.calmradio.com/sonos/&quot;
+        SecureUri=&quot;https://api.calmradio.com/sonos/&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;512&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;4&quot; Uri=&quot;https://api.calmradio.com/sonos/strings.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;294&quot; Name=&quot;Radio Javan&quot; Version=&quot;1.1&quot; Uri=&quot;http://rjsonos.app/musicservice&quot;
+        SecureUri=&quot;https://rjsonos.app/musicservice&quot; ContainerType=&quot;SoundLab&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;https://rjsonos.app/static/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;https://rjsonos.app/static/presentation_map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;292&quot; Name=&quot;Konbini Radio&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://konbiniradio.lcpy.io/api/v1/sonos&quot; SecureUri=&quot;https://konbiniradio.lcpy.io/api/v1/sonos&quot;
+        ContainerType=&quot;SoundLab&quot; Capabilities=&quot;512&quot;&gt;&lt;Policy
+        Auth=&quot;Anonymous&quot; PollInterval=&quot;300&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://konbiniradio.lcpy.io/static/strings.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;237&quot; Name=&quot;storePlay&quot; Version=&quot;1.1&quot; Uri=&quot;http://api.storeplay.com.au/sonos/SonosService.asmx&quot;
+        SecureUri=&quot;https://api.storeplay.com.au/sonos/SonosService.asmx&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;328193&quot;&gt;&lt;Policy
+        Auth=&quot;UserId&quot; PollInterval=&quot;3600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;3&quot; Uri=&quot;https://api.storeplay.com.au/sonos/Strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;https://api.storeplay.com.au/sonos/Presentation.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;31&quot; Name=&quot;Qobuz&quot; Version=&quot;1.1&quot; Uri=&quot;http://www.qobuz.com/api.xml/0.3/sonos&quot;
+        SecureUri=&quot;https://www.qobuz.com/api.xml/0.3/sonos&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;10835&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;120&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;7&quot; Uri=&quot;https://www.qobuz.com/sonos/0.3/stringtables.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;8&quot; Uri=&quot;https://www.qobuz.com/sonos/0.3/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;151&quot; Name=&quot;Google Play Music&quot; Version=&quot;1.1&quot;
+        Uri=&quot;https://mclients.googleapis.com/music/sonos/wsf/smapi&quot; SecureUri=&quot;https://mclients.googleapis.com/music/sonos/wsf/smapi&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;98899&quot;&gt;&lt;Policy
+        Auth=&quot;DeviceLink&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;10&quot; Uri=&quot;https://mclients.googleapis.com/music/sonos/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;15&quot; Uri=&quot;https://www.gstatic.com/play/music/sonosfe/pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;201&quot; Name=&quot;Amazon Music&quot; Version=&quot;1.1&quot; Uri=&quot;https://sonos.amazonmusic.com/&quot;
+        SecureUri=&quot;https://sonos.amazonmusic.com/&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;2142785&quot;&gt;&lt;Policy Auth=&quot;DeviceLink&quot;
+        PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings Version=&quot;22&quot;
+        Uri=&quot;https://sonos.amazonmusic.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;17&quot; Uri=&quot;https://sonos.amazonmusic.com/PresentationMap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;217&quot; Name=&quot;FIT Radio Workout Music&quot; Version=&quot;1.1&quot;
+        Uri=&quot;https://www.fitradio.com/apisonos/ws&quot; SecureUri=&quot;https://www.fitradio.com/apisonos/ws&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;4610&quot;&gt;&lt;Policy
+        Auth=&quot;DeviceLink&quot; PollInterval=&quot;120&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://www.fitradio.com/sonos/sonos_str.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;https://www.fitradio.com/sonos/sonos_pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;283&quot; Name=&quot;Calm&quot; Version=&quot;1.1&quot; Uri=&quot;https://sonos.calm.com/server.php&quot;
+        SecureUri=&quot;https://sonos.calm.com/server.php&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;102976&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;3600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;3&quot; Uri=&quot;https://sonos.calm.com/static/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;https://sonos.calm.com/static/pm.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;281&quot; Name=&quot;Red Bull Radio&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonos.redbullradio.com/smapi&quot; SecureUri=&quot;https://sonos.redbullradio.com/smapi&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;266816&quot;&gt;&lt;Policy
+        Auth=&quot;Anonymous&quot; PollInterval=&quot;10&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://sonos.redbullradio.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://sonos.redbullradio.com/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;279&quot; Name=&quot;Global Player&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonoslb.radioapi.io/global&quot; SecureUri=&quot;https://sonoslb.radioapi.io/global&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;577&quot;&gt;&lt;Policy
+        Auth=&quot;Anonymous&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://sonoslb.radioapi.io/global/stringtable.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://sonoslb.radioapi.io/global/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;204&quot; Name=&quot;Apple Music&quot; Version=&quot;1.1&quot; Uri=&quot;https://sonos-music.apple.com/ws/SonosSoap&quot;
+        SecureUri=&quot;https://sonos-music.apple.com/ws/SonosSoap&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;3117633&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;24&quot; Uri=&quot;https://sonos-music.apple.com/xml/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;21&quot; Uri=&quot;http://sonos-pmap.ws.sonos.com/applemusicbrand_pmap3.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;160&quot; Name=&quot;SoundCloud&quot; Version=&quot;1.1&quot; Uri=&quot;https://soundcloud-go.ws.sonos.com/smapi&quot;
+        SecureUri=&quot;https://soundcloud-go.ws.sonos.com/smapi&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;4611&quot;&gt;&lt;Policy Auth=&quot;DeviceLink&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;14&quot; Uri=&quot;http://soundcloud-static.ws.sonos.com/strings.3.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;14&quot; Uri=&quot;http://soundcloud-static.ws.sonos.com/pmap.14.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;239&quot; Name=&quot;Audible&quot; Version=&quot;1.1&quot; Uri=&quot;https://sonos.audible.com/smapi&quot;
+        SecureUri=&quot;https://sonos.audible.com/smapi&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;1095249&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;5&quot; Uri=&quot;https://sonos.audible.com/smapi/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;5&quot; Uri=&quot;https://sonos.audible.com/smapi/PresentationMap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;9&quot; Name=&quot;Spotify&quot; Version=&quot;1.1&quot; Uri=&quot;https://spotify-v4.ws.sonos.com/smapi&quot;
+        SecureUri=&quot;https://spotify-v4.ws.sonos.com/smapi&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;1116691&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;300&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;25&quot; Uri=&quot;http://spotify.cdn.sonos-ws-us.com/strings.24.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;22&quot; Uri=&quot;http://sonos-pmap.ws.sonos.com/spotify_pmap.18.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;203&quot; Name=&quot;Napster&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonosapi-napster-ns.rhapsody.com/smapi&quot;
+        SecureUri=&quot;https://sonosapi-napster.rhapsody.com/smapi&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;595&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;7&quot; Uri=&quot;http://static.rhap.com/sonos-api/napster/service_strings.4.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;7&quot; Uri=&quot;http://static.rhap.com/sonos-api/napster/service_pmap.4.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;277&quot; Name=&quot;NRK Radio&quot; Version=&quot;1.1&quot; Uri=&quot;http://psapi.nrk.no/sonos/sonos.svc&quot;
+        SecureUri=&quot;https://psapi.nrk.no/sonos/sonos.svc&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://psapi.nrk.no/sonos/localization/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://psapi.nrk.no/sonos/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;256&quot; Name=&quot;CBC Radio &amp;amp; Music&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://cbcmusic-sonos-beta.azurewebsites.net/SonosService.svc&quot;
+        SecureUri=&quot;https://cbcmusic-sonos-beta.azurewebsites.net/SonosService.svc&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;594496&quot;&gt;&lt;Policy
+        Auth=&quot;Anonymous&quot; PollInterval=&quot;300&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://cbcmusic-sonos-beta.azurewebsites.net/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;http://cbcmusic-sonos.azurewebsites.net/presentation_map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;270&quot; Name=&quot;Relisten&quot; Version=&quot;1.1&quot; Uri=&quot;https://sonos.relisten.net/mp3&quot;
+        SecureUri=&quot;https://sonos.relisten.net/mp3&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;4672&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;1200&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://sonos.relisten.net/static/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;https://sonos.relisten.net/static/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;275&quot; Name=&quot;ARTRADIO - RadioArt.com&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonos.radioart.com/&quot; SecureUri=&quot;https://sonos.radioart.com/&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;513&quot;&gt;&lt;Policy
+        Auth=&quot;UserId&quot; PollInterval=&quot;100&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://sonos.radioart.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://sonos.radioart.com/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;262&quot; Name=&quot;My Cloud Home&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonos.mycloud.com/musicservice&quot; SecureUri=&quot;https://sonos.mycloud.com/musicservice&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;33281&quot;&gt;&lt;Policy
+        Auth=&quot;AppLink&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;3&quot; Uri=&quot;https://sonos.mycloud.com/static/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;3&quot; Uri=&quot;https://sonos.mycloud.com/static/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;272&quot; Name=&quot;Worldwide FM&quot; Version=&quot;1.1&quot; Uri=&quot;http://wwfm-sonos.nextempire.net/sonos&quot;
+        SecureUri=&quot;https://wwfm-sonos.nextempire.net/sonos&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;512&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://wwfm-sonos.nextempire.net/strings.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;271&quot; Name=&quot;IDAGIO&quot; Version=&quot;1.1&quot; Uri=&quot;http://idg-prod-sonos.herokuapp.com/smapi/action&quot;
+        SecureUri=&quot;https://idg-prod-sonos.herokuapp.com/smapi/action&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;602688&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://idg-prod-sonos.herokuapp.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;https://idg-prod-sonos.herokuapp.com/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;268&quot; Name=&quot;myTuner Radio&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonos.mytuner.mobi/api/v2/sonos/soap&quot; SecureUri=&quot;https://sonos.mytuner.mobi/api/v2/sonos/soap&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;513&quot;&gt;&lt;Policy
+        Auth=&quot;Anonymous&quot; PollInterval=&quot;600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://static.mytuner.mobi/static/sonos/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;https://static.mytuner.mobi/static/sonos/pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;222&quot; Name=&quot;nugs.net&quot; Version=&quot;1.1&quot; Uri=&quot;https://sonos.nugs.net/soap/nugs&quot;
+        SecureUri=&quot;https://sonos.nugs.net/soap/nugs&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;6675&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;https://sonos.nugs.net/sample_str.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;https://sonos.nugs.net/sample_pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;221&quot; Name=&quot;LivePhish+&quot; Version=&quot;1.1&quot; Uri=&quot;https://sonos.nugs.net/soap/livephish&quot;
+        SecureUri=&quot;https://sonos.nugs.net/soap/livephish&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;6675&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;https://sonos.nugs.net/sample_str.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;https://sonos.nugs.net/sample_pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;265&quot; Name=&quot;PowerApp&quot; Version=&quot;1.1&quot; Uri=&quot;http://api.powergroup.com.tr/Sonos/&quot;
+        SecureUri=&quot;https://api.powergroup.com.tr/Sonos/&quot; ContainerType=&quot;SoundLab&quot;
+        Capabilities=&quot;512&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;59&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://api.powergroup.com.tr/Sonos/Strings/&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://api.powergroup.com.tr/Sonos/PresentationMap/&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;266&quot; Name=&quot;Les Ind\xE9s Radios&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonoslesindes.radioapi.io/Service.svc&quot; SecureUri=&quot;https://sonoslesindes.radioapi.io/Service.svc&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;577&quot;&gt;&lt;Policy
+        Auth=&quot;Anonymous&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://sonoslesindes.radioapi.io/stringtable.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://sonoslesindes.radioapi.io/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;264&quot; Name=&quot;radio.net&quot; Version=&quot;1.1&quot; Uri=&quot;https://api.radio.de/sonos/v1/ws&quot;
+        SecureUri=&quot;https://api.radio.de/sonos/v1/ws&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;889409&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://api.radio.de/sonos/v1/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;https://api.radio.de/sonos/v1/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;235&quot; Name=&quot;Sveriges Radio&quot; Version=&quot;1.1&quot;
+        Uri=&quot;https://sonos.playsr.com/ws&quot; SecureUri=&quot;https://sonos.playsr.com/ws&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;70145&quot;&gt;&lt;Policy
+        Auth=&quot;Anonymous&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;https://sonos.playsr.com/assets/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;https://sonos.playsr.com/assets/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;260&quot; Name=&quot;Minidisco&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonos.minidisco.nl/server.php&quot;
+        SecureUri=&quot;https://sonos.minidisco.nl/server.php&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;512&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;3600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://sonos.minidisco.nl/static/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://sonos.minidisco.nl/static/p.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;230&quot; Name=&quot;NTS Radio&quot; Version=&quot;1.1&quot; Uri=&quot;http://www.nts.live/smapi&quot;
+        SecureUri=&quot;https://www.nts.live/smapi&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;512&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://www.nts.live/smapi-strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://www.nts.live/pmap2.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;174&quot; Name=&quot;TIDAL&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonos.tidal.com/v1/sonos&quot;
+        SecureUri=&quot;https://sonos.tidal.com/v1/sonos&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;1083923&quot;&gt;&lt;Policy Auth=&quot;DeviceLink&quot;
+        PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings Version=&quot;4&quot;
+        Uri=&quot;http://sonos.tidal.com/assets/xml/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;3&quot; Uri=&quot;http://sonos.tidal.com/assets/xml/presentation.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;258&quot; Name=&quot;\u4F01\u9E45FM&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://api.fm.qq.com/v1/sonos/sonos_cgi&quot; SecureUri=&quot;https://api.fm.qq.com/v1/sonos/sonos_cgi&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;512&quot;&gt;&lt;Policy
+        Auth=&quot;DeviceLink&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://api.fm.qq.com/sonos/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://api.fm.qq.com/sonos/presentation_map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;13&quot; Name=&quot;Stitcher SmartRadio&quot; Version=&quot;1.1&quot;
+        Uri=&quot;https://www.stitcher.com/Service/Sonos/Sonos.php&quot; SecureUri=&quot;https://www.stitcher.com/Service/Sonos/Sonos.php&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;579&quot;&gt;&lt;Policy
+        Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;3&quot; Uri=&quot;https://www.stitcher.com/Service/Sonos/stitcher_string.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;8&quot; Uri=&quot;http://sonos-pmap.ws.sonos.com/stitcher_pmap.7.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;234&quot; Name=&quot;deliver.media&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonos.deliver.media/musicservice&quot; SecureUri=&quot;https://sonos.deliver.media/musicservice&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;512&quot;&gt;&lt;Policy
+        Auth=&quot;DeviceLink&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://sonos.deliver.media/static/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;https://sonos.deliver.media/static/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;164&quot; Name=&quot;Saavn&quot; Version=&quot;1.1&quot; Uri=&quot;http://www.saavn.com/apps/sonos/SonosAPI.php&quot;
+        SecureUri=&quot;https://www.saavn.com/apps/sonos/SonosAPI.php&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;12865&quot;&gt;&lt;Policy Auth=&quot;DeviceLink&quot; PollInterval=&quot;120&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;4&quot; Uri=&quot;http://www.saavn.com/apps/sonos/1.0/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;5&quot; Uri=&quot;http://www.saavn.com/apps/sonos/1.0/pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;233&quot; Name=&quot;Pocket Casts&quot; Version=&quot;1.1&quot; Uri=&quot;http://integrations.pocketcasts.com/service/smapi&quot;
+        SecureUri=&quot;https://integrations.pocketcasts.com/service/smapi&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;1028672&quot;&gt;&lt;Policy Auth=&quot;AppLink&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://integrations.pocketcasts.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://integrations.pocketcasts.com/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;254&quot; Name=&quot;TuneIn&quot; Version=&quot;1.1&quot; Uri=&quot;http://legato.radiotime.com/Radio.asmx&quot;
+        SecureUri=&quot;http://legato.radiotime.com/Radio.asmx&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;4160&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;0&quot;/&gt;&lt;Presentation&gt;&lt;PresentationMap
+        Version=&quot;3&quot; Uri=&quot;http://opml.radiotime.com/assets/sonos/map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;231&quot; Name=&quot;Wolfgang&amp;apos;s Music&quot; Version=&quot;1.1&quot;
+        Uri=&quot;https://moapi.wolfgangs.com/ws/wolfgangs.asmx&quot; SecureUri=&quot;https://moapi.wolfgangs.com/ws/wolfgangs.asmx&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;537153&quot;&gt;&lt;Policy
+        Auth=&quot;UserId&quot; PollInterval=&quot;600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://moapi.wolfgangs.com/ws/stringtable-wolfgangs.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;https://moapi.wolfgangs.com/ws/pmap-wolfgangs.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;2&quot; Name=&quot;Deezer&quot; Version=&quot;1.1&quot; Uri=&quot;http://api.deezer.com/sonos&quot;
+        SecureUri=&quot;https://api.deezer.com/sonos&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;2643&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;11&quot; Uri=&quot;http://files.deezer.com/xml/sonos_string_tables.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;11&quot; Uri=&quot;http://files.deezer.com/xml/sonos_pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;157&quot; Name=&quot;Bandcamp&quot; Version=&quot;1.1&quot; Uri=&quot;http://sns.bandcamp.com/api/sonos/2/sonos_api&quot;
+        SecureUri=&quot;https://sns.bandcamp.com/api/sonos/2/sonos_api&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;DeviceLink&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://bandcamp.com/api/sonos/2/sonos_stringtable.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;http://bandcamp.com/api/sonos/2/sonos_presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;218&quot; Name=&quot;Soundsuit.fm&quot; Version=&quot;1.1&quot; Uri=&quot;http://soundsuit.fm/smapi&quot;
+        SecureUri=&quot;https://soundsuit.fm/smapi&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;512&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;1&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://soundsuit.fm/public/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;http://soundsuit.fm/public/pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;192&quot; Name=&quot;focus@will&quot; Version=&quot;1.1&quot; Uri=&quot;https://www.focusatwill.com/sonos/action&quot;
+        SecureUri=&quot;https://www.focusatwill.com/sonos/action&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;5632&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;3600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;4&quot; Uri=&quot;https://cdn-images.focusatwill.com/sonos/stringtable.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;4&quot; Uri=&quot;https://cdn-images.focusatwill.com/sonos/presentation_map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;223&quot; Name=&quot;RauteMusik.FM&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonos-smapi.rautemusik.fm/smapi&quot; SecureUri=&quot;https://sonos-smapi.rautemusik.fm/smapi&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;513&quot;&gt;&lt;Policy
+        Auth=&quot;Anonymous&quot; PollInterval=&quot;3600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://sonos-smapi.rautemusik.fm/static/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://sonos-smapi.rautemusik.fm/static/presentationMap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;219&quot; Name=&quot;Audiobooks.com&quot; Version=&quot;1.1&quot;
+        Uri=&quot;https://api.audiobooks.com/api/v2/sonos/soap&quot; SecureUri=&quot;https://api.audiobooks.com/api/v2/sonos/soap&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;4672&quot;&gt;&lt;Policy
+        Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://www.audiobooks.com/sonos_service_strings.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;33&quot; Name=&quot;Murfie&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonos.murfie.com/&quot;
+        SecureUri=&quot;https://sonos.murfie.com/&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;5&quot; Uri=&quot;http://sonos.murfie.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;5&quot; Uri=&quot;http://sonos.murfie.com/presentation_map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;211&quot; Name=&quot;The Music Manager&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://themusicmanager.eu/sonos/SonosAPI.php&quot; SecureUri=&quot;https://themusicmanager.eu/sonos/SonosAPI.php&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;515&quot;&gt;&lt;Policy
+        Auth=&quot;UserId&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://themusicmanager.eu/sonos/lan_str.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://themusicmanager.eu/sonos/pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;162&quot; Name=&quot;radioPup&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonos.townsquaremedia.com/index.php&quot;
+        SecureUri=&quot;https://sonos.townsquaremedia.com/index.php&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;3600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://sonos.townsquaremedia.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://sonos.townsquaremedia.com/pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;181&quot; Name=&quot;Mixcloud&quot; Version=&quot;1.1&quot; Uri=&quot;https://www.mixcloud.com/sonos-app/&quot;
+        SecureUri=&quot;https://www.mixcloud.com/sonos-app/&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;2627&quot;&gt;&lt;Policy Auth=&quot;DeviceLink&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;5&quot; Uri=&quot;https://www.mixcloud.com/sonos-app/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;3&quot; Uri=&quot;https://www.mixcloud.com/sonos-app/presentation-map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;44&quot; Name=&quot;Hype Machine&quot; Version=&quot;1.1&quot; Uri=&quot;http://api.hypem.com/api/sonos&quot;
+        SecureUri=&quot;https://api.hypem.com/api/sonos&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;577&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;4&quot; Uri=&quot;http://hypem.com/strings_sonos.php&quot;/&gt;&lt;PresentationMap
+        Version=&quot;7&quot; Uri=&quot;http://hypem.com/pmap.php&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;38&quot; Name=&quot;7digital&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonos-service.7digital.com/sonos.asmx&quot;
+        SecureUri=&quot;https://sonos-service.7digital.com/sonos.asmx&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://sonos-service.7digital.com/stringtables.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;3&quot; Uri=&quot;http://sonos-pmap.ws.sonos.com/7digital_pmap.3.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;198&quot; Name=&quot;Anghami&quot; Version=&quot;1.1&quot; Uri=&quot;https://api.anghami.com/anghmob/SonosAPI.php&quot;
+        SecureUri=&quot;https://api.anghami.com/anghmob/SonosAPI.php&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;2627&quot;&gt;&lt;Policy Auth=&quot;DeviceLink&quot; PollInterval=&quot;90&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://phoenix.anghami.com/sonos/strings_20150818.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://phoenix.anghami.com/sonos/pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;189&quot; Name=&quot;SOUNDMACHINE&quot; Version=&quot;1.1&quot; Uri=&quot;http://provider.sound-machine.com/sonosapi&quot;
+        SecureUri=&quot;https://provider.sound-machine.com/sonosapi&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;120&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://provider.sound-machine.com/resources/sonosstrings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://provider.sound-machine.com/resources/sonospresmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;169&quot; Name=&quot;Tribe of Noise&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonos.tribeofnoise.com/server-v2.1.php&quot; SecureUri=&quot;https://sonos.tribeofnoise.com/server-v2.1.php&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;4672&quot;&gt;&lt;Policy
+        Auth=&quot;DeviceLink&quot; PollInterval=&quot;3600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;5&quot; Uri=&quot;http://sonos.tribeofnoise.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;4&quot; Uri=&quot;http://sonos.tribeofnoise.com/presentation_map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;171&quot; Name=&quot;Mood Mix&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonos.mix.moodmedia.com/api&quot;
+        SecureUri=&quot;https://sonos.mix.moodmedia.com/api&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;4609&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://sonos.mix.moodmedia.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;http://sonos.mix.moodmedia.com/presentation-map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;191&quot; Name=&quot;Classical Archives&quot; Version=&quot;1.1&quot;
+        Uri=&quot;https://api.classicalarchives.com/smapi/endpoint&quot; SecureUri=&quot;https://api.classicalarchives.com/smapi/endpoint&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;1030739&quot;&gt;&lt;Policy
+        Auth=&quot;DeviceLink&quot; PollInterval=&quot;600&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;3&quot; Uri=&quot;https://api.classicalarchives.com/smapi/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;3&quot; Uri=&quot;https://api.classicalarchives.com/smapi/presentationmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;167&quot; Name=&quot;Gaana&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonosapi.gaana.com/SonosAPI.php&quot;
+        SecureUri=&quot;http://sonosapi.gaana.com/SonosAPI.php&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;577&quot;&gt;&lt;Policy Auth=&quot;DeviceLink&quot; PollInterval=&quot;200&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://sonosapi.gaana.com/resources/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;http://sonosapi.gaana.com/resources/pmap.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;163&quot; Name=&quot;Spreaker&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonos.spreaker.com/sonos/service/v1&quot;
+        SecureUri=&quot;https://sonos.spreaker.com/sonos/service/v1&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;Anonymous&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://www.spreaker.com/sonos/string_table.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;https://www.spreaker.com/sonos/presentation_map.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;154&quot; Name=&quot;Radionomy&quot; Version=&quot;1.1&quot; Uri=&quot;http://sonos.radionomy.com/SonosService.svc&quot;
+        SecureUri=&quot;https://sonos.radionomy.com/SonosService.svc&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;513&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://sonos.radionomy.com/strings.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;3&quot; Uri=&quot;http://sonos-pmap.ws.sonos.com/radionomy_pmap.3.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;150&quot; Name=&quot;RUSC&quot; Version=&quot;1.1&quot; Uri=&quot;http://www.rusc.com/sonos.asmx&quot;
+        SecureUri=&quot;https://www.rusc.com/sonos.asmx&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;512&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;http://www.rusc.com/sonos.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;1&quot; Uri=&quot;http://sonos-pmap.s3.amazonaws.com/rusc_pmap.1.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;45&quot; Name=&quot;hotelradio.fm&quot; Version=&quot;1.1&quot; Uri=&quot;http://users.hotelradio.fm/sonosapi/index.php&quot;
+        SecureUri=&quot;https://users.hotelradio.fm/sonosapi/index.php&quot; ContainerType=&quot;MService&quot;
+        Capabilities=&quot;512&quot;&gt;&lt;Policy Auth=&quot;UserId&quot; PollInterval=&quot;60&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;1&quot; Uri=&quot;https://users.hotelradio.fm/sonosapi/strings.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;36&quot; Name=&quot;Hearts of Space&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://sonos.hos.com/SOAP/Server1.2.php&quot; SecureUri=&quot;https://sonos.hos.com/SOAP/Server1.2.php&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;512&quot;&gt;&lt;Policy
+        Auth=&quot;UserId&quot; PollInterval=&quot;1200&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://sonos.hos.com/DATA/StringResources1.2.xml&quot;/&gt;&lt;PresentationMap
+        Version=&quot;2&quot; Uri=&quot;http://sonos-pmap.ws.sonos.com/hos_pmap.2.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;Service
+        Id=&quot;24&quot; Name=&quot;DAR.fm Record Radio&quot; Version=&quot;1.1&quot;
+        Uri=&quot;http://dar.fm/SonosServer.php&quot; SecureUri=&quot;http://dar.fm/SonosServer.php&quot;
+        ContainerType=&quot;MService&quot; Capabilities=&quot;512&quot;&gt;&lt;Policy
+        Auth=&quot;UserId&quot; PollInterval=&quot;30&quot;/&gt;&lt;Presentation&gt;&lt;Strings
+        Version=&quot;2&quot; Uri=&quot;http://dar.fm/Sonos.xml&quot;/&gt;&lt;/Presentation&gt;&lt;/Service&gt;&lt;/Services&gt;</AvailableServiceDescriptorList><AvailableServiceTypeList>54279,72711,72967,36871,75271,74759,60679,7943,38663,51463,55559,72455,71943,71431,52231,40967,61191,2311,51975,70919,65543,69127,70407,67079,69639,69383,68615,56839,56583,67847,68103,67591,60167,66567,58887,44551,66055,3335,59911,41991,59655,59143,519,40199,55815,49159,57095,56071,8455,54023,41479,46343,11271,9735,50695,48391,43271,43783,48903,42759,41735,39431,38407,11527,9223,6151</AvailableServiceTypeList><AvailableServiceListVersion>RINCON_347E5C68F04001400:5</AvailableServiceListVersion></u:ListAvailableServicesResponse></s:Body></s:Envelope>"}
+    headers:
+      CONTENT-TYPE: [text/xml; charset="utf-8"]
+      Connection: [close]
+      EXT: ['']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+      TRANSFER-ENCODING: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: <?xml version="1.0"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+      s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetString
+      xmlns:u="urn:schemas-upnp-org:service:SystemProperties:1"><VariableName>R_TrialZPSerial</VariableName></u:GetString></s:Body></s:Envelope>
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['304']
+      Content-Type: [text/xml; charset="utf-8"]
+      SOAPACTION: ['urn:schemas-upnp-org:service:SystemProperties:1#GetString']
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: http://192.168.1.18:1400/SystemProperties/Control
+  response:
+    body: {string: '<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+        s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetStringResponse
+        xmlns:u="urn:schemas-upnp-org:service:SystemProperties:1"><StringValue>34-7E-5C-68-F0-40:7</StringValue></u:GetStringResponse></s:Body></s:Envelope>'}
+    headers:
+      CONTENT-LENGTH: ['301']
+      CONTENT-TYPE: [text/xml; charset="utf-8"]
+      Connection: [close]
+      EXT: ['']
+      Server: [Linux UPnP/1.0 Sonos/48.2-61220 (ZPS13)]
+    status: {code: 200, message: OK}
+version: 1
