@@ -1,2 +1,2 @@
-soco == 0.16
-deezer-python == 0.9.0
+soco
+deezer-python
