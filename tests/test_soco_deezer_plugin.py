@@ -3,34 +3,28 @@
 
 """Test of this plugin."""
 
-import os
 import unittest
-import vcr
 import deezer
-from soco import SoCo
+from soco.discovery import discover
 from soco_deezer_plugin.soco_deezer import DeezerSocoPlugin
 
 
-def mkpath(name):
-    rootdir = os.path.dirname(os.path.abspath(__file__))
-    return os.path.join(rootdir, 'requests', name)
+def get_coordinator_device():
+    return [device for device in discover() if device.is_coordinator][0]
 
 
 class TestSocoDeezerPlugin(unittest.TestCase):
 
-    @vcr.use_cassette(mkpath("setup.yaml"))
     def setUp(self):
-        self.device = SoCo("192.168.1.18")
+        self.device = get_coordinator_device()
         self.device.clear_queue()
         self.dzs = DeezerSocoPlugin(self.device, username="user@home.com",
                                     service_type=519)
 
-    @vcr.use_cassette(mkpath("test_with_ids.yaml"))
     def test_with_ids(self):
         self.dzs.add_track_to_queue('107028548')  # add track at the end of queue
         self.dzs.add_album_to_queue('85607212', position=1)  # add album at the begining
 
-    @vcr.use_cassette(mkpath("test_with_deezer_python_objects.yaml"))
     def test_with_deezer_python_objects(self):
         client = deezer.Client()
         artist = client.search(query="Beirut", relation="artist")[0]

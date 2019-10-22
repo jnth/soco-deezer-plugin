@@ -20,10 +20,10 @@ Usage
 
 Example of use::
 
-    from soco import SoCo
+    from soco.discovery import any_soco
     from soco_deezer_plugin.soco_deezer import DeezerSocoPlugin
 
-    device = SoCo("192.168.255.255")  # ip of your Sonos device
+    device = any_soco()
     device.clear_queue()
 
     dzs = DeezerSocoPlugin(device, username="user@home.com", service_type=519)
