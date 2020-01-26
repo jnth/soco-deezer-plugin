@@ -41,6 +41,11 @@ We can use the `deezer-python library`_ to search for an album and add it into S
     dzs.add_album_to_queue(album)
 
 
+Contributors
+------------
+ - jnth (`@jnth <https://github.com/jnth>`_)
+ - seby54 (`@seby54 <https://github.com/seby54>`_)
+
 
 .. _SoCo: http://python-soco.com/
 .. _Deezer: https://www.deezer.com
