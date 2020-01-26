@@ -10,7 +10,7 @@ from soco.music_services import MusicService
 from soco.music_services.accounts import Account
 from soco.compat import quote_url
 from soco.data_structures import (DidlResource, DidlAudioItem, DidlAlbum,
-                                  to_didl_string)
+                                  to_didl_string,DidlPlaylistContainer)
 import deezer
 
 
@@ -20,6 +20,11 @@ prefix_id = {
     'user-albums': '1008006c',
 }
 
+prefix_playlist_id = {
+    'track': '00032020',
+    'album': '0004206c',
+    'user-albums': '1006006c',
+}
 
 class DeezerSocoPlugin(SoCoPlugin):
     def __init__(self, soco, username, service_type):
@@ -125,6 +130,44 @@ class DeezerSocoPlugin(SoCoPlugin):
         didl = DidlAlbum(item_id=item_id,
                          parent_id=f"{prefix_parent_id}user-albums-{artist_id}",
                          title=dz_album.title,
+                         desc=self.__ms.desc,
+                         resources=[resource, ],
+                         restricted=False)
+        self.__add_uri_to_queue(uri, didl, position)
+
+    def add_playlist_to_queue(self,
+                           playlist: Union[deezer.resources.Playlist, str, int],
+                           position: Optional[int] = None):
+        """Add an playlist into Sonos queue.
+
+        :param playlist: Deezer playlist object or Deezer playlist identifier
+        :param position: Position into the queue, None to the end of the queue.
+        """
+        if isinstance(playlist, deezer.resources.Playlist):
+            playlist_id = str(playlist.id)
+        elif isinstance(playlist, (str, int)):
+            playlist_id = str(playlist)
+        else:
+            raise TypeError("Invalid `playlist` argument")
+        del playlist
+
+        dz_playlist = self.__dz.get_playlist(playlist_id)
+        #artist_id = dz_playlist.get_playlist().id
+
+        position = self.__valid_queue_position(position)
+
+        prefix_item_id = prefix_id.get('album')
+        prefix_parent_id = prefix_id.get('user-albums')
+
+        item_id = f"{prefix_parent_id}playlist_spotify%3aplaylist-{playlist_id}"
+        uri = f"x-rincon-cpcontainer:{item_id}"
+
+        resource = DidlResource(protocol_info="x-rincon-cpcontainer:*:*:*", uri=uri)
+
+
+        didl = DidlPlaylistContainer(item_id=item_id,
+                         parent_id=f"{prefix_parent_id}playlist_spotify:playlist-{playlist_id}",
+                         title=dz_playlist.title,
                          desc=self.__ms.desc,
                          resources=[resource, ],
                          restricted=False)
