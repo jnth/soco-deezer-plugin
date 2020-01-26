@@ -29,6 +29,7 @@ Example of use::
     dzs = DeezerSocoPlugin(device, username="user@home.com", service_type=519)
     dzs.add_track_to_queue('107028548')  # add track at the end of queue
     dzs.add_album_to_queue('85607212', position=1)  # add album at the begining of queue
+    dzs.add_playlist_to_queue('6036493264')  # add playlist
 
 We can use the `deezer-python library`_ to search for an album and add it into Sonos queue::
 
@@ -39,6 +40,11 @@ We can use the `deezer-python library`_ to search for an album and add it into S
     album = artist.get_albums()[0]
     dzs.add_album_to_queue(album)
 
+
+Contributors
+------------
+ - jnth (`@jnth <https://github.com/jnth>`_)
+ - seby54 (`@seby54 <https://github.com/seby54>`_)
 
 
 .. _SoCo: http://python-soco.com/

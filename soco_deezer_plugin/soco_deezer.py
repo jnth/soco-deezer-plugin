@@ -10,7 +10,7 @@ from soco.music_services import MusicService
 from soco.music_services.accounts import Account
 from soco.compat import quote_url
 from soco.data_structures import (DidlResource, DidlAudioItem, DidlAlbum,
-                                  to_didl_string,DidlPlaylistContainer)
+                                  to_didl_string, DidlPlaylistContainer)
 import deezer
 
 
@@ -25,6 +25,7 @@ prefix_playlist_id = {
     'album': '0004206c',
     'user-albums': '1006006c',
 }
+
 
 class DeezerSocoPlugin(SoCoPlugin):
     def __init__(self, soco, username, service_type):
@@ -136,8 +137,8 @@ class DeezerSocoPlugin(SoCoPlugin):
         self.__add_uri_to_queue(uri, didl, position)
 
     def add_playlist_to_queue(self,
-                           playlist: Union[deezer.resources.Playlist, str, int],
-                           position: Optional[int] = None):
+                              playlist: Union[deezer.resources.Playlist, str, int],
+                              position: Optional[int] = None):
         """Add an playlist into Sonos queue.
 
         :param playlist: Deezer playlist object or Deezer playlist identifier
@@ -152,11 +153,9 @@ class DeezerSocoPlugin(SoCoPlugin):
         del playlist
 
         dz_playlist = self.__dz.get_playlist(playlist_id)
-        #artist_id = dz_playlist.get_playlist().id
 
         position = self.__valid_queue_position(position)
 
-        prefix_item_id = prefix_id.get('album')
         prefix_parent_id = prefix_id.get('user-albums')
 
         item_id = f"{prefix_parent_id}playlist_spotify%3aplaylist-{playlist_id}"
@@ -164,11 +163,10 @@ class DeezerSocoPlugin(SoCoPlugin):
 
         resource = DidlResource(protocol_info="x-rincon-cpcontainer:*:*:*", uri=uri)
 
-
         didl = DidlPlaylistContainer(item_id=item_id,
-                         parent_id=f"{prefix_parent_id}playlist_spotify:playlist-{playlist_id}",
-                         title=dz_playlist.title,
-                         desc=self.__ms.desc,
-                         resources=[resource, ],
-                         restricted=False)
+                                     parent_id=f"{prefix_parent_id}playlist_spotify:playlist-{playlist_id}",
+                                     title=dz_playlist.title,
+                                     desc=self.__ms.desc,
+                                     resources=[resource, ],
+                                     restricted=False)
         self.__add_uri_to_queue(uri, didl, position)

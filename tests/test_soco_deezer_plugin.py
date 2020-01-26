@@ -24,6 +24,7 @@ class TestSocoDeezerPlugin(unittest.TestCase):
     def test_with_ids(self):
         self.dzs.add_track_to_queue('107028548')  # add track at the end of queue
         self.dzs.add_album_to_queue('85607212', position=1)  # add album at the begining
+        self.dzs.add_playlist_to_queue('6036493264')  # add playlist
 
     def test_with_deezer_python_objects(self):
         client = deezer.Client()
@@ -34,6 +35,9 @@ class TestSocoDeezerPlugin(unittest.TestCase):
         track = client.advanced_search({'artist': "Lou Doillon", 'album': "Soliloquy",
                                         'track': "Widows"}, relation="track")[0]
         self.dzs.add_track_to_queue(track)
+
+        playlist = client.get_playlist('6036493264')
+        self.dzs.add_playlist_to_queue(playlist)
 
 
 if __name__ == '__main__':
