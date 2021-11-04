@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "soco-deezer-plugin"
+version = "0.3.0"
+description = "SoCo Deezer plugin is design to add Deezer tracks, albums or playlists into Sonos queue."
+authors = ["Jonathan Virga <jonathan.virga@gmail.com>"]
+license = "BSD 3-Clause License"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+deezer-python = "^4.1.0"
+soco = "^0.24.1"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.24.4"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

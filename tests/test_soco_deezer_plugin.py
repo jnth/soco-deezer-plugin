@@ -28,15 +28,14 @@ class TestSocoDeezerPlugin(unittest.TestCase):
 
     def test_with_deezer_python_objects(self):
         client = deezer.Client()
-        artist = client.search(query="Beirut", relation="artist")[0]
+        artist = client.search_artists(query="Beirut")[0]
         album = artist.get_albums()[0]
         self.dzs.add_album_to_queue(album)
 
-        track = client.advanced_search({'artist': "Lou Doillon", 'album': "Soliloquy",
-                                        'track': "Widows"}, relation="track")[0]
+        track = client.search(artist="Lou Doillon", album="Soliloquy", track="Widows")[0]
         self.dzs.add_track_to_queue(track)
 
-        playlist = client.get_playlist('6036493264')
+        playlist = client.get_playlist(6036493264)
         self.dzs.add_playlist_to_queue(playlist)
 
 

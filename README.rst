@@ -12,7 +12,7 @@ Install Soco Deezer plugin::
 
     python3 -m venv /path/of/venv
     source /path/of/venv/bin/activate
-    pip install soco_deezer_plugin-0.1.0-py3-none-any.whl
+    pip install soco_deezer_plugin-0.3.0-py3-none-any.whl
 
 
 Usage
@@ -36,7 +36,7 @@ We can use the `deezer-python library`_ to search for an album and add it into S
     import deezer
 
     client = deezer.Client()
-    artist = client.search(query="Beirut", relation="artist")[0]
+    artist = client.search_artists(query="Beirut")[0]
     album = artist.get_albums()[0]
     dzs.add_album_to_queue(album)
 

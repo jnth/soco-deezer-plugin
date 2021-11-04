@@ -8,7 +8,7 @@ from typing import Union, Optional
 from soco.plugins import SoCoPlugin
 from soco.music_services import MusicService
 from soco.music_services.accounts import Account
-from soco.compat import quote_url
+from urllib.parse import quote as quote_url
 from soco.data_structures import (DidlResource, DidlAudioItem, DidlAlbum,
                                   to_didl_string, DidlPlaylistContainer)
 import deezer
@@ -18,12 +18,6 @@ prefix_id = {
     'track': '00032020',
     'album': '0004206c',
     'user-albums': '1008006c',
-}
-
-prefix_playlist_id = {
-    'track': '00032020',
-    'album': '0004206c',
-    'user-albums': '1006006c',
 }
 
 
@@ -68,14 +62,12 @@ class DeezerSocoPlugin(SoCoPlugin):
         :param position: Position into the queue, None to the end of the queue.
         """
         if isinstance(track, deezer.resources.Track):
-            track_id = str(track.id)
+            track_id = int(track.id)
         elif isinstance(track, (str, int)):
-            track_id = str(track)
+            track_id = int(track)
         else:
             raise TypeError("Invalid `track` argument")
         del track
-
-        track_id = str(track_id)
 
         dz_track = self.__dz.get_track(track_id)
         album_id = dz_track.get_album().id
@@ -108,9 +100,9 @@ class DeezerSocoPlugin(SoCoPlugin):
         :param position: Position into the queue, None to the end of the queue.
         """
         if isinstance(album, deezer.resources.Album):
-            album_id = str(album.id)
+            album_id = int(album.id)
         elif isinstance(album, (str, int)):
-            album_id = str(album)
+            album_id = int(album)
         else:
             raise TypeError("Invalid `album` argument")
         del album
@@ -145,9 +137,9 @@ class DeezerSocoPlugin(SoCoPlugin):
         :param position: Position into the queue, None to the end of the queue.
         """
         if isinstance(playlist, deezer.resources.Playlist):
-            playlist_id = str(playlist.id)
+            playlist_id = int(playlist.id)
         elif isinstance(playlist, (str, int)):
-            playlist_id = str(playlist)
+            playlist_id = int(playlist)
         else:
             raise TypeError("Invalid `playlist` argument")
         del playlist
