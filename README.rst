@@ -1,3 +1,30 @@
+Archived repository
+===================
+
+This plugin is not needed anymore.
+
+Use this now::
+
+    import deezer
+    from soco.plugins.sharelink import ShareLinkPlugin
+    from soco import SoCo
+
+    dz = deezer.Client()
+
+    albums = dz.search_albums("Ezra Collective")
+    selected_album = albums[0]
+
+    speaker = SoCo("192.168.1.17")
+    speaker.clear_queue()
+
+    share_link = ShareLinkPlugin(speaker)
+    queue_position = share_link.add_share_link_to_queue(selected_album.link)
+    speaker.play()
+
+
+-----
+
+
 SoCo Deezer plugin
 ==================
 
